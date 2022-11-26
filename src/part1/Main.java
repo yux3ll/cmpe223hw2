@@ -25,7 +25,7 @@ public class Main {
 
 
 
-    static Integer[] fileReaderInt(Scanner input){
+    static Integer[] fileReaderInt(Scanner input){      // reads a file into int array from given directory
         Integer[] values = new Integer[input.nextInt()];
         int i=0;
         while(input.hasNext()){
