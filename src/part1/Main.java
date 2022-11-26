@@ -15,7 +15,8 @@ public class Main {
 
         try {
             Scanner input = new Scanner(new File(fileName));
-            Integer[] numbers = fileReaderInt(input);
+           Double[] numbers = fileReaderDouble(input);
+            // Integer[] numbers = fileReaderInt(input);
             Insertion.modifiedSort(numbers);
             System.out.println();
         } catch (FileNotFoundException e) {
@@ -25,6 +26,15 @@ public class Main {
     }
 
 
+    static Double[] fileReaderDouble(Scanner input){      // reads a file into int array from given directory, uses first line as size
+        Double[] values = new Double[input.nextInt()];
+        int i=0;
+        while(input.hasNext()){
+            values[i]=input.nextDouble();
+            i++;
+        }
+        return values;
+    }
 
 
     static Integer[] fileReaderInt(Scanner input){      // reads a file into int array from given directory, uses first line as size
