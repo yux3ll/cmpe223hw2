@@ -10,6 +10,15 @@ public class Insertion
                 exch(a, j, j-1);
         }
     }
+
+    public static void modifiedSort(Comparable[] a) {
+
+        for (int i = a.length - 1; i > 0; i--) {
+            for (int j = i; j < a.length && less(a[j - 1], a[j]); j++)
+                exch(a, j, j - 1);
+        }
+    }
+
     private static boolean less(Comparable v, Comparable w)
     { return v.compareTo(w) < 0; }
     private static void exch(Comparable[] a, int i, int j)
