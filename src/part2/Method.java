@@ -11,6 +11,7 @@ public class Method {
         Integer[] hardCoded = {113, 23, 1, 109, 4, 102, 7, 105, 100, 107};
         sortWithChoice(hardCoded, k);
         pairwiseDifference(hardCoded);
+
     }
 
     public static void sortWithChoice(Integer[] input, Scanner k){
@@ -26,6 +27,7 @@ public class Method {
             Selection.sort(input);
         } else {
             System.out.println("Enter a valid sorting algorithm");
+            System.exit(0);
         }
     }
     public static void pairwiseDifference(Integer[] input){
@@ -47,7 +49,7 @@ public class Method {
         }
         }
 
-    System.out.print("Output: " + minDif + " [" + input[index]+ " " + input[index+1]+ "]");
+    System.out.print(minDif + " [" + input[index]+ " " + input[index+1]+ "]");
 }
 
 }
