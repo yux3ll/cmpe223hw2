@@ -1,7 +1,5 @@
 package part2;
 
-import java.util.Scanner;
-
 public class Method {
     //-----------------------------------------------------
     // Title: Method
@@ -13,25 +11,19 @@ public class Method {
     // in accordance with the user's choice, and then uses a linear comparison to find the smallest pairwise difference within the array, printing the result and the coinciding elements
     //-----------------------------------------------
 
-    public static void main(String[] args){
-        Scanner k = new Scanner(System.in);
-        Integer[] hardCoded = {113, 23, 1, 109, 4, 102, 7, 105, 100, 107}; // pre determined array
-        sortWithChoice(hardCoded, k);
-        k.close();
-        pairwiseDifference(hardCoded);
+public static void method(Integer[] input, String choice){
 
-    }
-
-    public static void sortWithChoice(Integer[] input, Scanner k){ // take user input from scanner and select the proper sorting algorithm using if statements
-        System.out.println("Enter the sort you want to use:");
-        String method = k.nextLine();
-        if(method.equalsIgnoreCase("insertion")){
+    sortWithChoice(input,choice);
+    pairwiseDifference(input);
+}
+    public static void sortWithChoice(Integer[] input, String choice){ // take user input from scanner and select the proper sorting algorithm using if statements
+        if(choice.equalsIgnoreCase("insertion")){
             Insertion.sort(input);
-        } else if (method.equalsIgnoreCase("quick")) {
+        } else if (choice.equalsIgnoreCase("quick")) {
             Quick.sort(input);
-        } else if (method.equalsIgnoreCase("merge")) {
+        } else if (choice.equalsIgnoreCase("merge")) {
             Merge.sort(input);
-        } else if (method.equalsIgnoreCase("selection")) {
+        } else if (choice.equalsIgnoreCase("selection")) {
             Selection.sort(input);
         } else {
             System.out.println("Enter a valid sorting algorithm"); // exits the program if the input has no correct matches in the library
