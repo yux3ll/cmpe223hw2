@@ -1,4 +1,4 @@
-package part1;
+package part1and2;
 
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;

@@ -1,10 +1,10 @@
-package part1;
+package part1and2;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Main {
+public class Main1 {
     public static void main(String[] args){
         Scanner k = new Scanner(System.in);
 

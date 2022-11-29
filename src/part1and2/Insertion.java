@@ -1,4 +1,4 @@
-package part1;
+package part1and2;
 public class Insertion
 {
     public static void sort(Comparable[] a)
