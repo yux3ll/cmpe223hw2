@@ -16,4 +16,7 @@ public class Route implements Comparable<Route> {
     }
 
 
+    public String toString() {
+        return source + " " + destination;
+    }
 }
