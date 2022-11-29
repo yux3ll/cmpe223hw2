@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
-       /* Scanner k = new Scanner(System.in);
+        Scanner k = new Scanner(System.in);
 
         System.out.println("Input filename: ");
         String fileName = k.nextLine();
@@ -17,12 +17,13 @@ public class Main {
             Scanner input = new Scanner(new File(fileName));
            Double[] numbers = fileReaderDouble(input);
             // Integer[] numbers = fileReaderInt(input);
-            Merge.sortDescend(numbers);
+            //Merge.sortDescend(numbers);
+            Quick.sortDescend(numbers);
             System.out.println();
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
-*/
+
     Route[] test = new Route[10];
     test[0] = new Route("Ankara", "Antalya");
     test[1] = new Route("Ankara", "Istanbul");
@@ -35,7 +36,7 @@ public class Main {
     test[8] = new Route("Istabul", "Izmir");
     test[9] = new Route("Istanbul", "Ankara");
 
-    Quick.sort(test);
+
     System.out.println();
     }
 
