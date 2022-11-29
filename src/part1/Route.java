@@ -1,4 +1,4 @@
-package part1and2;
+package part1;
 
 public class Route implements Comparable<Route> {
     public String source;

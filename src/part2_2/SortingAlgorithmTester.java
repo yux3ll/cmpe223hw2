@@ -1,4 +1,4 @@
-package part1and2;
+package part2_2;
 
 public class SortingAlgorithmTester {
 
