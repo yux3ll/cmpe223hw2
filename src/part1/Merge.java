@@ -1,7 +1,14 @@
 package part1;
 
 public class Merge {
-
+    //-----------------------------------------------------
+    // Title: Merge
+    // Author: Yüksel Çağlar Baypınar
+    // ID: 43951623744
+    // Section: 02
+    // Assignment: 2
+    // Description: Generic Merge sort class with the inclusion of a descending sort method
+    //-----------------------------------------------
     private static Comparable[] aux; // auxiliary array for merges
 
     public static void sort(Comparable[] a)

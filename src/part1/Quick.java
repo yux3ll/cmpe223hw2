@@ -2,6 +2,14 @@ package part1;
 
 public class Quick {
 
+    //-----------------------------------------------------
+    // Title: Quick
+    // Author: Yüksel Çağlar Baypınar
+    // ID: 43951623744
+    // Section: 02
+    // Assignment: 2
+    // Description: Generic Quick sort class with the inclusion of a descending sort method
+    //-----------------------------------------------
         public static void sort(Comparable[] a)
         {
             StdRandom.shuffle(a);
