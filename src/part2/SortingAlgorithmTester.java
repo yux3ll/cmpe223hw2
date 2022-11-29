@@ -14,7 +14,7 @@ public class SortingAlgorithmTester {
     // Description: A class with a main method that takes one integer input from the user to create a random array of varying sizes
     // in order to compare the time complexities of different sorting algorithms.
     //-----------------------------------------------
-
+    .
     public static void main(String[] args){
         Scanner k = new Scanner(System.in);
         System.out.println("Enter a seed to create random generated values:");
